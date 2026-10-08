@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcos Silva · QA Automation</title>
+<meta name="description" content="Marcos Silva, Senior QA Automation Specialist. Automação de testes de ponta a ponta com Playwright, TypeScript, Newman e Salesforce.">
+<meta property="og:title" content="Marcos Silva · QA Automation">
+<meta property="og:description" content="Automação de QA de ponta a ponta: da massa de teste pela API à evidência pronta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<script>
+  try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="marca" href="#">Marcos Silva</a>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#competencias">Competências</a></li>
+      <li class="sempre"><a href="#contato">Contato</a></li>
+      <li class="sempre"><button class="tema" id="tema" aria-label="Alternar tema claro/escuro">◐</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ─────────────── APRESENTAÇÃO ─────────────── -->
+  <header class="home-hero">
+    <div>
+      <p class="saudacao">Olá, eu sou o Marcos 👋</p>
+      <h1>Automatizo o QA de ponta a ponta, da API à evidência.</h1>
+      <p class="lead">Senior QA Automation Specialist. Construo esteiras que criam a massa de teste, acompanham o processamento no sistema, validam cada campo e entregam a evidência pronta, para o time testar mais e documentar menos.</p>
+      <div class="acoes">
+        <a class="btn primario" href="#projetos">Ver projetos</a>
+        <a class="btn" href="assets/curriculo-marcos-silva.pdf">Baixar currículo</a>
+      </div>
+      <div class="sociais">
+        <a href="https://www.linkedin.com/in/SEU-LINKEDIN" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://github.com/SEU-USUARIO" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a>
+        <a href="mailto:SEU-EMAIL" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.2-.5 7.8 6.1L19.8 5H4.2zM20 6.6l-7.38 5.77a1 1 0 0 1-1.24 0L4 6.6v11.9c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.6z"/></svg></a>
+      </div>
+      <div class="disponivel">Aberto a novas oportunidades</div>
+    </div>
+    <!-- Para usar sua foto: salve como assets/foto.jpg. Sem o arquivo, ficam as iniciais. -->
+    <div class="foto" aria-hidden="true">MS<img src="assets/foto.jpg" alt="" onerror="this.remove()"></div>
+  </header>
+
+  <!-- ─────────────── SOBRE ─────────────── -->
+  <section id="sobre">
+    <p class="rotulo">Sobre</p>
+    <h2>Qualidade que não depende de esforço manual</h2>
+    <div class="sobre">
+      <div>
+        <p>Sou especialista em automação de testes com foco em fluxos ponta a ponta de sistemas corporativos: APIs, Salesforce, bancos de dados e as telas por onde o dado passa.</p>
+        <p>Gosto de transformar processos de QA manuais, lentos e sujeitos a erro em esteiras confiáveis. Faço isso com testes orientados a dados, regras de negócio testáveis, evidência gerada sem operador e critérios objetivos no lugar do "acho que já processou".</p>
+        <p>No meu último projeto, uma esteira que construí passou a cobrir mais de 2 mil cenários de assinaturas de streaming e reduziu em 94% o esforço humano de um ciclo de regressão.</p>
+      </div>
+      <div class="numeros">
+        <div><b>2.096</b><span>cenários automatizados de ponta a ponta</span></div>
+        <div><b>−94%</b><span>de esforço humano por ciclo de regressão</span></div>
+        <div><b>−96%</b><span>de material de teste a manter</span></div>
+        <div><b>240+</b><span>campos conferidos por execução</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────── EXPERIÊNCIA ─────────────── -->
+  <!-- Preencha com suas experiências: copie um <li> por cargo, do mais recente para o mais antigo. -->
+  <section id="experiencia">
+    <p class="rotulo">Experiência</p>
+    <h2>Trajetória</h2>
+    <ol class="linha-tempo">
+      <li>
+        <span class="quando">[ANO] — atual</span>
+        <h3>Senior QA Automation Specialist</h3>
+        <p class="onde">[EMPRESA] · projeto para operadora de telecom e streaming</p>
+        <p>Concepção e construção de uma esteira de automação de QA de ponta a ponta para assinaturas de TV por streaming, com massa via API, acompanhamento da orquestração no Salesforce, validação no banco e no e-mail do cliente e evidência gerada automaticamente.</p>
+        <ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Newman</li><li>Salesforce</li><li>Oracle</li></ul>
+      </li>
+      <li>
+        <span class="quando">[ANO] — [ANO]</span>
+        <h3>[CARGO]</h3>
+        <p class="onde">[EMPRESA]</p>
+        <p>[Uma ou duas frases sobre o que você fez e o resultado, de preferência com um número.]</p>
+      </li>
+      <li>
+        <span class="quando">[ANO] — [ANO]</span>
+        <h3>[FORMAÇÃO]</h3>
+        <p class="onde">[INSTITUIÇÃO]</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ─────────────── PROJETOS ─────────────── -->
+  <section id="projetos">
+    <p class="rotulo">Projetos</p>
+    <h2>Trabalhos em destaque</h2>
+    <p class="sub">Um case real, anonimizado, e a mesma arquitetura em código aberto para você ver como eu escrevo testes.</p>
+    <div class="projetos">
+      <a class="projeto-card" href="case/esteira-qa.html">
+        <div class="projeto-capa azul">
+          <span class="tipo">Case · Telecom e streaming</span>
+          <b>2.096 cenários</b>
+          <small>de ponta a ponta, sem intervenção manual</small>
+        </div>
+        <div class="projeto-corpo">
+          <h3>Esteira de automação de QA</h3>
+          <p>Cria assinaturas pela API, acompanha a orquestração no Salesforce minuto a minuto, valida mais de 240 campos e entrega a evidência pronta. Cerca de 1.012 h liberadas por ciclo de regressão.</p>
+          <ul class="chips"><li>Playwright</li><li>Newman</li><li>Salesforce</li><li>Oracle</li></ul>
+          <span class="ir">Ler o case →</span>
+        </div>
+      </a>
+      <a class="projeto-card" href="https://github.com/SEU-USUARIO/qa-e2e-pipeline">
+        <div class="projeto-capa verde">
+          <span class="tipo">Código aberto · GitHub</span>
+          <b>qa-e2e-pipeline</b>
+          <small>API + UI + CI com relatórios publicados</small>
+        </div>
+        <div class="projeto-corpo">
+          <h3>Esteira E2E pública</h3>
+          <p>A arquitetura do case contra uma loja pública: massa data-driven com Newman, espera com critério de pronto, validação com Playwright e Page Objects, evidência com senha mascarada e CI no GitHub Actions.</p>
+          <ul class="chips"><li>TypeScript</li><li>Playwright</li><li>Newman</li><li>GitHub Actions</li></ul>
+          <span class="ir">Ver o código →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────── COMPETÊNCIAS ─────────────── -->
+  <section id="competencias">
+    <p class="rotulo">Competências</p>
+    <h2>Ferramentas e práticas</h2>
+    <div class="grade g3">
+      <div class="card"><h3>Automação</h3><ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Node.js</li><li>Newman</li><li>Postman</li><li>Selenium</li><li>Python</li></ul></div>
+      <div class="card"><h3>Plataformas e dados</h3><ul class="chips"><li>Salesforce (Classic e Lightning)</li><li>Order Management</li><li>APIs REST</li><li>Oracle / SQL</li></ul></div>
+      <div class="card"><h3>Engenharia de testes</h3><ul class="chips"><li>Page Object Model</li><li>Testes orientados a dados</li><li>Pirâmide de testes</li><li>Validação de contrato</li><li>CI/CD · GitHub Actions</li><li>ESLint · Prettier</li><li>Git</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ─────────────── CONTATO ─────────────── -->
+  <section id="contato">
+    <div class="card contato">
+      <p class="rotulo">Contato</p>
+      <h2>Vamos conversar sobre qualidade?</h2>
+      <p class="sub" style="margin:0 auto 26px">Aberto a posições de QA Automation e a projetos de automação de testes de ponta a ponta.</p>
+      <div class="acoes">
+        <a class="btn primario" href="https://www.linkedin.com/in/SEU-LINKEDIN">LinkedIn</a>
+        <a class="btn" href="mailto:SEU-EMAIL">E-mail</a>
+        <a class="btn" href="https://github.com/SEU-USUARIO">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">© 2026 Marcos Silva · Feito à mão, publicado no GitHub Pages.</footer>
+
+<script>
+  document.getElementById('tema').addEventListener('click', () => {
+    const r = document.documentElement;
+    const escuro = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    r.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('tema', r.dataset.theme) } catch (e) {}
+  });
+</script>
+</body>
+</html>

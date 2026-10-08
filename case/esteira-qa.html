@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case · Esteira de QA</title>
+<meta name="description" content="Portfólio de Marcos Silva, Senior QA Automation Specialist: automação de testes de ponta a ponta com Playwright, TypeScript, Newman e Salesforce.">
+<meta property="og:title" content="Marcos Silva · QA Automation">
+<meta property="og:description" content="Da massa de teste pela API à evidência pronta na interface, sem intervenção manual.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/estilo.css">
+<script>
+  try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="marca" href="../">Marcos Silva</a>
+    <ul>
+      <li><a href="../#projetos">Projetos</a></li>
+      <li><a href="#projeto">Código aberto</a></li>
+      <li class="sempre"><a href="../#contato">Contato</a></li>
+      <li class="sempre"><button class="tema" id="tema" aria-label="Alternar tema claro/escuro">◐</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <header class="hero">
+    <a class="voltar" href="../#projetos">← Todos os projetos</a>
+    <span class="cargo">Case · Telecom e streaming</span>
+    <h1>Da massa de teste à evidência pronta, sem intervenção manual.</h1>
+    <p class="lead">Esteira de automação de QA que cobre o ciclo de vida completo de assinaturas de TV por streaming: cria os dados pela API, acompanha a orquestração no Salesforce, valida cada campo e entrega a evidência pronta.</p>
+
+    <div class="kpis" aria-label="Resultados do case">
+      <div class="kpi"><b>2.096</b><span>cenários de ponta a ponta</span><small>44 produtos · 2 catálogos · 2 ambientes</small></div>
+      <div class="kpi"><b>240+</b><span>campos conferidos por execução</span><small>esperado × obtido, com veredito</small></div>
+      <div class="kpi"><b>−96%</b><span>de material de teste a manter</span><small>de 20.136 para 711 requisições</small></div>
+      <div class="kpi"><b>≈1.012 h</b><span>liberadas por ciclo de regressão*</span><small>cerca de 6 meses de trabalho de uma pessoa</small></div>
+    </div>
+  </header>
+
+  <!-- ─────────────────────────── CASE ─────────────────────────── -->
+  <section id="case">
+    <p class="rotulo">Contexto</p>
+    <h2>Esteira de automação de QA para assinaturas de TV por streaming</h2>
+    <p class="sub">Uma operadora de telecomunicações vende assinaturas de TV por streaming com ciclo de vida completo, orquestradas no Salesforce. Cada cenário exigia horas de trabalho manual entre APIs, telas e documentos de evidência. Substituí esse processo por uma esteira que cobre o ciclo inteiro com um único comando.</p>
+
+    <div class="contexto">
+      <div class="card">
+        <h3>Escopo</h3>
+        <dl class="fatos">
+          <div><dt>Produtos</dt><dd>44 (ofertas, SVODs, OTTs, TVOD, EST)</dd></div>
+          <div><dt>Meios de pagamento</dt><dd>Cartão (2 gateways), Google Play, giftcard</dd></div>
+          <div><dt>Ciclo de vida</dt><dd>Aquisição, suspensão, retomada, cancelamentos, chargeback, upgrade e downgrade</dd></div>
+          <div><dt>Ambientes</dt><dd>2 sandboxes × 2 catálogos</dd></div>
+        </dl>
+        <p class="aviso">O código é propriedade do cliente e não é público. A mesma arquitetura está reproduzida, com código aberto, no <a href="#projeto">projeto público</a>.</p>
+      </div>
+      <div class="card">
+        <h3>Meu papel</h3>
+        <p>Concepção da arquitetura, implementação das três camadas, migração do legado (Selenium/Python e coleções Postman duplicadas por produto), documentação e apresentação dos resultados ao cliente.</p>
+        <ul class="chips" style="margin-top:16px">
+          <li>Playwright</li><li>TypeScript estrito</li><li>Newman</li><li>Postman</li><li>Salesforce</li><li>Oracle</li><li>Node.js 24</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Antes × depois</p>
+    <h2>Cada atividade mudou de natureza, não só de velocidade</h2>
+    <div class="tabela-wrap">
+      <table class="tabela">
+        <thead><tr><th>Atividade</th><th>Antes</th><th>Com a esteira</th><th>Ganho</th></tr></thead>
+        <tbody>
+          <tr><td>Manter a massa de teste</td><td class="antes">20.136 requisições, com o fluxo inteiro duplicado por produto</td><td class="depois">711 requisições: um fluxo por canal e um catálogo de produtos como dados</td><td><span class="ganho">−96% de material</span></td></tr>
+          <tr><td>Executar um cenário</td><td class="antes">De 10 min (SVOD) a 1 h (oferta) na aquisição, mais 10 min por ação de ciclo de vida</td><td class="depois">Execução sem operador, com cerca de 2 min de revisão</td><td><span class="ganho">−94% de esforço*</span></td></tr>
+          <tr><td>Aguardar o processamento</td><td class="antes">Acompanhamento manual, sem critério de pronto</td><td class="depois">Orquestração lida a cada minuto, com regra de cores e reprocessamento automático</td><td><span class="ganho">Critério objetivo</span></td></tr>
+          <tr><td>Produzir a evidência</td><td class="antes">Cerca de 10 telas, 50 prints e o documento montado à mão</td><td class="depois">Documento, prints e relatório esperado × obtido gerados sem operador</td><td><span class="ganho">Montagem eliminada</span></td></tr>
+          <tr><td>Ligar massa, ação e evidência</td><td class="antes">Identificador do cliente copiado à mão entre ferramentas</td><td class="depois">Um comando de ponta a ponta</td><td><span class="ganho">Sem erro de transcrição</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota">* Estimativa para um ciclo completo de 2.096 cenários: média manual de 31 min por cenário (≈ 1.082 h) contra cerca de 2 min de revisão na esteira (≈ 70 h). A espera de processamento do ambiente não entra na conta.</p>
+  </section>
+
+  <section>
+    <p class="rotulo">Arquitetura</p>
+    <h2>Três projetos independentes, uma esteira</h2>
+    <p class="sub">Cada camada continua executável sozinha. O orquestrador não copia nada: roda cada camada dentro do próprio projeto. Assim, uma melhoria em qualquer camada vale na hora para a esteira, e contadores de dados únicos nunca são reutilizados.</p>
+    <div class="card diagrama">
+      <svg class="horizontal" viewBox="0 0 1000 250" role="img" aria-label="Catálogo alimenta a camada de massa; o orquestrador encadeia massa, espera e validação; a validação gera a evidência">
+        <defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="ponta" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+        <rect class="caixa" x="10" y="80" width="150" height="90" rx="12"/>
+        <text class="t3" x="30" y="108">DADOS</text><text class="t1" x="30" y="132">Catálogo</text><text class="t2" x="30" y="152">44 produtos</text>
+
+        <rect class="caixa forte" x="210" y="20" width="580" height="210" rx="16"/>
+        <text class="t3" x="230" y="46">ORQUESTRADOR · TYPESCRIPT</text>
+
+        <rect class="caixa" x="230" y="70" width="160" height="130" rx="12"/>
+        <text class="t3" x="248" y="98">CAMADA 1</text><text class="t1" x="248" y="122">Massa via API</text><text class="t2" x="248" y="144">Newman data-driven</text><text class="t2" x="248" y="162">6 coleções</text><text class="t2" x="248" y="180">711 requisições</text>
+
+        <rect class="caixa" x="420" y="70" width="160" height="130" rx="12"/>
+        <text class="t3" x="438" y="98">ESPERA</text><text class="t1" x="438" y="122">Orquestração</text><text class="t2" x="438" y="144">lida a cada minuto</text><text class="t2" x="438" y="162">regra de cores</text><text class="t2" x="438" y="180">retry automático</text>
+
+        <rect class="caixa" x="610" y="70" width="160" height="130" rx="12"/>
+        <text class="t3" x="628" y="98">CAMADA 2</text><text class="t1" x="628" y="122">Validação</text><text class="t2" x="628" y="144">Playwright · Page Objects</text><text class="t2" x="628" y="162">Salesforce · banco</text><text class="t2" x="628" y="180">e-mail do cliente</text>
+
+        <rect class="caixa" x="840" y="80" width="150" height="90" rx="12"/>
+        <text class="t3" x="860" y="108">SAÍDA</text><text class="t1" x="860" y="132">Evidência</text><text class="t2" x="860" y="152">documento · relatório</text>
+
+        <path class="seta" d="M160,125 H226" marker-end="url(#m)"/>
+        <path class="seta" d="M390,135 H416" marker-end="url(#m)"/>
+        <path class="seta" d="M580,135 H606" marker-end="url(#m)"/>
+        <path class="seta" d="M790,125 H836" marker-end="url(#m)"/>
+      </svg>
+      <svg class="vertical" viewBox="0 0 340 560" role="img" aria-label="Catálogo, massa via API, espera pela orquestração, validação e evidência, em sequência">
+        <defs><marker id="mv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="ponta" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+        <rect class="caixa" x="20" y="10" width="300" height="70" rx="12"/><text class="t3" x="40" y="38">DADOS</text><text class="t1" x="40" y="62">Catálogo · 44 produtos</text>
+        <rect class="caixa forte" x="10" y="110" width="320" height="330" rx="16"/><text class="t3" x="30" y="136">ORQUESTRADOR · TYPESCRIPT</text>
+        <rect class="caixa" x="30" y="150" width="280" height="80" rx="12"/><text class="t1" x="48" y="182">Massa via API</text><text class="t2" x="48" y="204">Newman · 6 coleções · 711 requisições</text>
+        <rect class="caixa" x="30" y="250" width="280" height="80" rx="12"/><text class="t1" x="48" y="282">Espera pela orquestração</text><text class="t2" x="48" y="304">regra de cores · retry automático</text>
+        <rect class="caixa" x="30" y="350" width="280" height="80" rx="12"/><text class="t1" x="48" y="382">Validação</text><text class="t2" x="48" y="404">Playwright · Salesforce · banco · e-mail</text>
+        <rect class="caixa" x="20" y="470" width="300" height="70" rx="12"/><text class="t3" x="40" y="498">SAÍDA</text><text class="t1" x="40" y="522">Evidência pronta</text>
+        <path class="seta" d="M170,80 V106" marker-end="url(#mv)"/><path class="seta" d="M170,230 V246" marker-end="url(#mv)"/><path class="seta" d="M170,330 V346" marker-end="url(#mv)"/><path class="seta" d="M170,440 V466" marker-end="url(#mv)"/>
+      </svg>
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Fluxo</p>
+    <h2>Um único comando percorre todo o ciclo de vida</h2>
+    <div class="passos">
+      <div class="passo"><h3>Pré-checagem</h3><p>Confirma que o cenário existe e está ativo antes de consumir massa ou token.</p></div>
+      <div class="passo"><h3>Massa via API</h3><p>Cliente, meio de pagamento, conta de faturamento e produto, em segundos.</p></div>
+      <div class="passo"><h3>Ciclo de vida</h3><p>Suspensão, retomada, cancelamentos, chargeback, upgrade ou downgrade.</p></div>
+      <div class="passo"><h3>Orquestração verificada</h3><p>Cada pedido acompanhado no Salesforce, minuto a minuto, até fechar.</p></div>
+      <div class="passo"><h3>Validação</h3><p>Mais de 240 campos conferidos, do pedido ao banco de dados e ao e-mail.</p></div>
+      <div class="passo"><h3>Evidência</h3><p>Documento, prints de tela cheia e relatório esperado × obtido.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Confiabilidade</p>
+    <h2>Mecanismos desenhados a partir de falhas reais</h2>
+    <p class="sub">Cada um nasceu de um problema observado no ambiente de teste, e não de uma lista de boas práticas.</p>
+    <div class="grade g4">
+      <div class="card"><h3>Critério de pronto</h3><p>A cor de cada item da orquestração decide quando seguir. Fim da espera "no olho".</p></div>
+      <div class="card"><h3>Recuperação automática</h3><p>Itens com erro transitório são reprocessados e acompanhados até o fim. Erro persistente para a esteira.</p></div>
+      <div class="card"><h3>Sem falso pronto</h3><p>O pedido da etapa precisa existir na conta antes de ser verificado, para não ler o pedido anterior, já fechado.</p></div>
+      <div class="card"><h3>Divergência não interrompe</h3><p>O fluxo vai até o fim, gera toda a evidência e reprova com a lista completa de divergências.</p></div>
+      <div class="card"><h3>Falha técnica isolada</h3><p>Problema de tela gera trace e contexto da página, separado do resultado de negócio.</p></div>
+      <div class="card"><h3>Sessão controlada</h3><p>Login único, MFA com dispositivo confiável e logout sempre confirmado.</p></div>
+      <div class="card"><h3>Nenhum dado reutilizado</h3><p>Contadores únicos e persistentes para tokens de parceiro e giftcards, compartilhados entre os projetos.</p></div>
+      <div class="card"><h3>Relatórios sem segredo</h3><p>Cabeçalhos e corpos com credencial ocultados, calculados da própria coleção, e cada relatório varrido ao final.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Resultado</p>
+    <h2>Um defeito que nenhuma tela mostrava</h2>
+    <div class="defeito">
+      <div>
+        <p style="margin:0 0 10px;color:var(--ink-2)">Na chamada de cobrança do plano anual, a validação apontou um <b>parcelamento diferente do esperado</b>: um campo que não aparece em nenhuma tela e que a conferência visual não alcança.</p>
+        <p style="margin:0;color:var(--ink-2)">A divergência foi detectada automaticamente, entrou na evidência e foi registrada como defeito.</p>
+      </div>
+      <div class="esperado-obtido" aria-label="Exemplo ilustrativo de conferência">
+        <div class="linha-ok">✓ produto ........ esperado = obtido</div>
+        <div class="linha-ok">✓ valor .......... esperado = obtido</div>
+        <div class="linha-ok">✓ periodicidade .. esperado = obtido</div>
+        <div class="linha-div">✗ parcelamento ... esperado ≠ obtido</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="rotulo">Engenharia</p>
+    <h2>O que é mais barato roda primeiro</h2>
+    <p class="sub">Verificação estática e testes unitários levam segundos e rodam antes de qualquer execução no Salesforce.</p>
+    <div class="piramide">
+      <div class="p1">Ponta a ponta<small>2.096 cenários no Salesforce</small></div>
+      <div class="p2">Testes unitários<small>99 testes de regras de negócio, catálogo e evidência</small></div>
+      <div class="p3">Verificação estática<small>1.499 scripts e 547 encadeamentos das coleções conferidos em 0,4 s</small></div>
+    </div>
+    <div class="grade g3" style="margin-top:24px">
+      <div class="card"><h3>Page Object Model</h3><p>Cada tela mapeada uma única vez. Manutenção num só ponto.</p></div>
+      <div class="card"><h3>Orientado a dados</h3><p>Cenários e produtos são dados, não código. Produto novo não exige código novo.</p></div>
+      <div class="card"><h3>Extrapolação conferida</h3><p>Novos cenários são derivados de referências mapeadas ao vivo, e a regra precisa reproduzir os já validados antes de gerar.</p></div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── PROJETO PÚBLICO ─────────────────────────── -->
+  <section id="projeto">
+    <p class="rotulo">Projeto público · código aberto</p>
+    <h2>A mesma arquitetura, para você ver o código</h2>
+    <p class="sub">Uma réplica da esteira contra o ServeRest, uma loja pública feita para estudo de testes. Ela tem as mesmas camadas, as mesmas técnicas e CI com relatórios publicados.</p>
+    <div class="projeto">
+      <div class="card">
+        <h3>qa-e2e-pipeline</h3>
+        <ul class="lista">
+          <li>Massa data-driven com <b>Newman</b>: uma pasta da collection por etapa do ciclo de vida</li>
+          <li>Pré-checagem que recusa cenário em standby <b>antes</b> de criar dados</li>
+          <li>Espera com critério objetivo de pronto, implementado como regra pura e testada</li>
+          <li>Validação campo a campo com <b>Playwright</b> e Page Objects, com evidência e senha mascarada</li>
+          <li>Relatórios sem credenciais, com o que ocultar calculado da própria collection</li>
+          <li>CI no GitHub Actions: qualidade, E2E em matriz, execução agendada e GitHub Pages</li>
+        </ul>
+        <div class="acoes" style="margin-top:20px">
+          <a class="btn primario" href="https://github.com/SEU-USUARIO/qa-e2e-pipeline">Ver o repositório</a>
+          <a class="btn" href="https://SEU-USUARIO.github.io/qa-e2e-pipeline/">Relatórios da última execução</a>
+        </div>
+      </div>
+      <pre class="terminal" aria-label="Exemplo de execução no terminal"><span class="c">$</span> npm run e2e -- cancelamento --todos
+
+<span class="a">1. Pré-checagem</span>
+  <span class="s">⏭</span>  WEBCAM_HD: standby
+  <span class="v">✓</span>  FONE_BT: AQUISICAO → COMPRA → CANCELAMENTO
+  <span class="v">✓</span>  TECLADO_MEC: AQUISICAO → COMPRA → CANCELAMENTO
+<span class="a">2. Massa</span> (Newman · 2 produtos)
+  14 requisições · 24 asserções · 0 falhas
+<span class="a">3. Espera pelo estado final</span>
+  <span class="v">✓</span>  FONE_BT: pronto em 1 leitura
+  <span class="v">✓</span>  TECLADO_MEC: pronto em 1 leitura
+<span class="a">4. Validação e evidência</span> (Playwright)
+  2 passed
+<span class="a">5. Resumo</span>
+  <span class="v">✓</span>  FONE_BT        aprovado
+  <span class="v">✓</span>  TECLADO_MEC    aprovado</pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="card contato">
+      <h2>Quer conversar sobre este case?</h2>
+      <div class="acoes"><a class="btn primario" href="../#contato">Entrar em contato</a><a class="btn" href="../#projetos">Ver outros projetos</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">Marcos Silva · QA Automation · O case não identifica o cliente, a equipe nem dados reais de assinantes.</footer>
+
+<script>
+  document.getElementById('tema').addEventListener('click', () => {
+    const r = document.documentElement;
+    const escuro = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    r.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('tema', r.dataset.theme) } catch (e) {}
+  });
+</script>
+</body>
+</html>
