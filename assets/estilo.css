@@ -249,3 +249,46 @@ footer { color: var(--muted); font-size: 13px; padding: 48px 0 40px; text-align:
 .js .revelar { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease }
 .js .revelar.visivel { opacity: 1; transform: none }
 @media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none } .janela, .disponivel::before { animation: none } }
+
+/* ── página do case ───────────────────────────────────── */
+.topo-case { display: grid; gap: 40px; align-items: center }
+@media (min-width: 1000px) { .topo-case { grid-template-columns: 1.1fr 1fr } }
+.topo-case h1 { max-width: 17ch }
+.topo-case h1 .grad, .kpi b { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent }
+.topo-case .voltar { display: block; margin-bottom: 14px }
+.janela.execucao-case { position: relative; font-size: 12.5px; animation: flutuar 8s ease-in-out infinite; box-shadow: 0 20px 60px rgba(0, 0, 0, .45), 0 0 50px rgba(79, 141, 255, .18) }
+@media (max-width: 999px) { .janela.execucao-case { animation: none } }
+@media (max-width: 759px) { .janela.execucao-case { display: none } }
+
+/* KPIs com brilho */
+.kpis { background: var(--line); box-shadow: 0 0 40px rgba(79, 141, 255, .12) }
+.kpi { transition: background .2s } .kpi:hover { background: var(--surface-2) }
+
+/* cards e passos com o mesmo brilho da home */
+.case .card, .case .passo { transition: border-color .2s, box-shadow .2s, transform .2s }
+.case .card:hover, .case .passo:hover { border-color: var(--accent); box-shadow: var(--glow); transform: translateY(-3px) }
+.case .contato:hover { transform: none }
+.passo { position: relative; background: var(--surface) }
+.passo::before { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--accent-soft); border: 1px solid var(--line); font-size: 12px }
+
+/* diagrama: caixas com brilho e setas em movimento */
+.diagrama .caixa { fill: var(--surface-2); stroke: var(--line) }
+.diagrama .caixa.forte { fill: rgba(79, 141, 255, .07); stroke: var(--accent); filter: drop-shadow(0 0 14px rgba(79, 141, 255, .35)) }
+.diagrama .seta { stroke: var(--accent); stroke-dasharray: 5 5; animation: fluxo 1.1s linear infinite }
+.diagrama .ponta { fill: var(--accent) }
+@keyframes fluxo { to { stroke-dashoffset: -10 } }
+
+/* tabela antes × depois */
+.tabela tbody tr { transition: background .15s } .tabela tbody tr:hover { background: var(--accent-soft) }
+
+/* pirâmide de testes */
+.piramide div { border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0, 0, 0, .25) }
+.piramide .p1 { background: linear-gradient(135deg, #047857, #10b981); box-shadow: 0 0 30px rgba(16, 185, 129, .3) }
+.piramide .p2 { background: linear-gradient(135deg, #1d4ed8, #4f8dff) }
+.piramide .p3 { background: linear-gradient(135deg, #0b1a3a, #13306b); outline: none }
+:root[data-theme="light"] .piramide .p3 { background: linear-gradient(135deg, #1e293b, #334155) }
+
+/* defeito e terminal do projeto */
+.defeito { background: var(--surface); box-shadow: 0 0 40px rgba(248, 113, 113, .08) }
+.terminal { background: rgba(6, 14, 32, .93); border-color: rgba(120, 155, 230, .28); box-shadow: 0 20px 50px rgba(0, 0, 0, .35) }
+@media (prefers-reduced-motion: reduce) { .diagrama .seta, .janela.execucao-case { animation: none } }
