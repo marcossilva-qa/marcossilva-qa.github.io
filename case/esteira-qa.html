@@ -17,9 +17,9 @@
 </head>
 <body>
 
-<nav>
+<nav class="topo">
   <div class="wrap">
-    <a class="marca" href="../">Marcos Silva</a>
+    <a class="marca" href="../"><span class="logo">MS</span><span>Marcos <em>Silva</em></span></a>
     <ul>
       <li><a href="../#projetos">Projetos</a></li>
       <li><a href="#projeto">Código aberto</a></li>
@@ -249,8 +249,7 @@
 <script>
   document.getElementById('tema').addEventListener('click', () => {
     const r = document.documentElement;
-    const escuro = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-    r.dataset.theme = escuro ? 'light' : 'dark';
+    r.dataset.theme = r.dataset.theme === 'light' ? 'dark' : 'light';
     try { localStorage.setItem('tema', r.dataset.theme) } catch (e) {}
   });
 </script>

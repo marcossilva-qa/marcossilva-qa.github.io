@@ -2,30 +2,34 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Marcos Silva · QA Automation</title>
 <meta name="description" content="Marcos Silva, Senior QA Engineer. Automação de testes de ponta a ponta com Playwright, TypeScript, Newman e Salesforce.">
 <meta property="og:title" content="Marcos Silva · QA Automation">
 <meta property="og:description" content="Automação de QA de ponta a ponta: da massa de teste pela API à evidência pronta.">
+<meta property="og:image" content="https://marcossilva-qa.github.io/assets/foto.jpg">
+<meta name="theme-color" content="#050b18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231d4ed8'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' fill='white' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/estilo.css">
 <script>
+  document.documentElement.classList.add('js');
   try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
 </script>
 </head>
-<body>
+<body class="home">
 
-<nav>
+<nav class="topo">
   <div class="wrap">
-    <a class="marca" href="#">Marcos Silva</a>
+    <a class="marca" href="#inicio"><span class="logo">MS</span><span>Marcos <em>Silva</em></span></a>
     <ul>
+      <li><a href="#inicio">Início</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#experiencia">Experiência</a></li>
       <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#competencias">Competências</a></li>
-      <li class="sempre"><a href="#contato">Contato</a></li>
+      <li><a href="#contato">Contato</a></li>
       <li class="sempre"><button class="tema" id="tema" aria-label="Alternar tema claro/escuro">◐</button></li>
     </ul>
   </div>
@@ -33,32 +37,49 @@
 
 <main class="wrap">
 
-  <!-- ─────────────── APRESENTAÇÃO ─────────────── -->
-  <header class="home-hero">
-    <div>
-      <p class="saudacao">Olá, eu sou o Marcos 👋</p>
-      <h1>Automatizo o QA de ponta a ponta, da API à evidência.</h1>
+  <!-- ─────────────── INÍCIO ─────────────── -->
+  <header class="topo-home" id="inicio">
+    <div class="revelar">
+      <p class="saudacao">&gt; Olá, eu sou o Marcos 👋</p>
+      <h1>Automatizo o QA <span class="grad">de ponta a ponta</span>, da API à evidência.</h1>
       <p class="lead">Senior QA Engineer, certificado ISTQB Advanced. Construo esteiras que criam a massa de teste, acompanham o processamento no sistema, validam cada campo e entregam a evidência pronta, para o time testar mais e documentar menos.</p>
       <div class="acoes">
         <a class="btn primario" href="#projetos">Ver projetos</a>
-        <a class="btn" href="assets/curriculo-marcos-silva.pdf">Baixar currículo</a>
-      </div>
-      <div class="sociais">
-        <a href="https://www.linkedin.com/in/marcos-silva-1046a328a" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
-        <a href="https://github.com/marcossilva-qa" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a>
-        <a href="mailto:marcos.silva020594@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.2-.5 7.8 6.1L19.8 5H4.2zM20 6.6l-7.38 5.77a1 1 0 0 1-1.24 0L4 6.6v11.9c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.6z"/></svg></a>
+        <a class="btn" href="#contato">Entrar em contato</a>
+        <a class="btn" href="assets/curriculo-marcos-silva.pdf">Currículo (PDF)</a>
       </div>
       <div class="disponivel">Aberto a novas oportunidades</div>
     </div>
-    <!-- Para usar sua foto: salve como assets/foto.jpg. Sem o arquivo, ficam as iniciais. -->
-    <div class="foto">MS<img src="assets/foto.jpg" alt="Foto de Marcos Silva" onerror="this.remove()"></div>
+
+    <div class="palco revelar" aria-hidden="true">
+      <div class="janela codigo">
+        <div class="barra"><i></i><i></i><i></i>qa.config.ts</div>
+<pre><span class="k">const</span> qa = {
+  foco: [<span class="s">'api'</span>, <span class="s">'e2e'</span>, <span class="s">'evidência'</span>],
+  stack: [<span class="s">'playwright'</span>, <span class="s">'ts'</span>],
+  divergencias: <span class="a">0</span>,
+};</pre>
+      </div>
+      <div class="retrato"><span>MS</span><img src="assets/foto.jpg" alt="" onerror="this.remove()"></div>
+      <div class="janela execucao">
+        <div class="barra"><i></i><i></i><i></i>terminal</div>
+<pre><span class="c">$</span> npm run e2e -- cancelamento --todos
+<span class="a">1</span> pré-checagem   <span class="v">✓</span> 3 cenários  <span class="s">⏭</span> 1 standby
+<span class="a">2</span> massa (API)    <span class="v">✓</span> 24 asserções · 0 falhas
+<span class="a">3</span> espera         <span class="v">✓</span> pronto em 1 leitura
+<span class="a">4</span> validação (UI) <span class="v">✓</span> 3 passed
+<span class="a">5</span> evidência      <span class="v">✓</span> relatório gerado</pre>
+      </div>
+    </div>
   </header>
 
   <!-- ─────────────── SOBRE ─────────────── -->
   <section id="sobre">
-    <p class="rotulo">Sobre</p>
-    <h2>Qualidade que não depende de esforço manual</h2>
-    <div class="sobre">
+    <div class="revelar">
+      <p class="rotulo">Sobre mim</p>
+      <h2>Quem eu sou</h2>
+    </div>
+    <div class="sobre revelar">
       <div>
         <p>Sou especialista em automação de testes com foco em fluxos ponta a ponta de sistemas corporativos: APIs, Salesforce, bancos de dados e as telas por onde o dado passa.</p>
         <p>Gosto de transformar processos de QA manuais, lentos e sujeitos a erro em esteiras confiáveis. Faço isso com testes orientados a dados, regras de negócio testáveis, evidência gerada sem operador e critérios objetivos no lugar do "acho que já processou".</p>
@@ -68,17 +89,25 @@
         <div><b>2.096</b><span>cenários automatizados de ponta a ponta</span></div>
         <div><b>−94%</b><span>de esforço humano por ciclo de regressão</span></div>
         <div><b>−96%</b><span>de material de teste a manter</span></div>
-        <div><b>240+</b><span>campos conferidos por execução</span></div>
+        <div><b>10+</b><span>anos entre QA, testes e integrações</span></div>
       </div>
+    </div>
+    <div class="pilares revelar">
+      <div class="pilar"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 13l2 2 4-4"/></svg><b>Automação E2E</b><small>Playwright, Cypress, Selenium</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13 5l-2 14"/></svg><b>Testes de API</b><small>Postman, Newman, contrato</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5V12a4 4 0 0 0 4 4h5.5M18 15.5V12"/><path d="m16 10 2 2 2-2"/></svg><b>CI/CD</b><small>GitLab CI, GitHub Actions</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><b>ISTQB Advanced</b><small>Test Analyst (CTAL-TA)</small></div>
     </div>
   </section>
 
   <!-- ─────────────── EXPERIÊNCIA ─────────────── -->
   <section id="experiencia">
-    <p class="rotulo">Experiência</p>
-    <h2>Trajetória</h2>
+    <div class="revelar">
+      <p class="rotulo">Experiência</p>
+      <h2>Trajetória</h2>
+    </div>
     <ol class="linha-tempo">
-      <li>
+      <li class="revelar">
         <span class="quando">out/2023 — atual · híbrido</span>
         <h3>Senior QA Engineer</h3>
         <p class="onde">Hitss Brasil · produto de assinaturas de TV por streaming em telecom</p>
@@ -86,29 +115,28 @@
         <p>Também automatizei APIs no Postman com cenários BDD (Gherkin e Cucumber.js), rodei suítes no GitLab CI/CD e estruturei cadernos de teste no OpenText Octane.</p>
         <ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Newman</li><li>Salesforce</li><li>Cucumber.js</li><li>GitLab CI/CD</li><li>SQL</li></ul>
       </li>
-      <li>
+      <li class="revelar">
         <span class="quando">mar/2021 — out/2023 · remoto</span>
         <h3>Senior QA Automation Engineer</h3>
         <p class="onde">Stigma System</p>
         <p>Cenários de teste a partir de regras de negócio, desenvolvimento e manutenção de automações de APIs, testes funcionais e apoio à aceitação do usuário (UAT).</p>
         <ul class="chips"><li>Automação de APIs</li><li>Testes funcionais</li><li>UAT</li></ul>
       </li>
-      <li>
+      <li class="revelar">
         <span class="quando">jan/2018 — dez/2020 · remoto</span>
         <h3>Analista de Integrações e Automação de APIs Pleno</h3>
         <p class="onde">MR Consultoria</p>
         <p>Integrações REST em PHP e JavaScript para provedores de internet, conectando a URA a sistemas como IXCSoft, MK Solutions, Receitanet, Controllr e SGP, com testes e documentação das integrações de faturas e extratos de conexão.</p>
         <ul class="chips"><li>APIs REST</li><li>PHP</li><li>JavaScript</li><li>Jenkins</li><li>Scrum</li></ul>
       </li>
-      <li>
+      <li class="revelar">
         <span class="quando">nov/2014 — nov/2016 · Salvador, BA</span>
         <h3>Estagiário de Quality Assurance</h3>
         <p class="onde">NPR Brasil</p>
         <p>Testes funcionais em sistema financeiro web, modelagem de massas de dados e documentação.</p>
       </li>
     </ol>
-
-    <div class="grade g2" style="margin-top:8px">
+    <div class="grade g2 revelar">
       <div class="card"><h3>Formação</h3><p><b>Tecnólogo em Análise e Desenvolvimento de Sistemas</b><br>Universidade Pitágoras Unopar Anhanguera · 2018–2020</p></div>
       <div class="card"><h3>Certificação e idiomas</h3><p><b>ISTQB CTAL-TA</b> · Certified Tester Advanced Level, Test Analyst<br>Inglês avançado (C1)</p></div>
     </div>
@@ -116,75 +144,122 @@
 
   <!-- ─────────────── PROJETOS ─────────────── -->
   <section id="projetos">
-    <p class="rotulo">Projetos</p>
-    <h2>Trabalhos em destaque</h2>
-    <p class="sub">Um case real, anonimizado, e a mesma arquitetura em código aberto para você ver como eu escrevo testes.</p>
+    <div class="revelar">
+      <p class="rotulo">Meus projetos</p>
+      <h2>Projetos em destaque</h2>
+      <p class="sub">Um case real, anonimizado, e a mesma arquitetura em código aberto, com CI e relatórios publicados, para você ver como eu escrevo testes.</p>
+    </div>
     <div class="projetos">
-      <a class="projeto-card" href="case/esteira-qa.html">
-        <div class="projeto-capa azul">
-          <span class="tipo">Case · Telecom e streaming</span>
-          <b>2.096 cenários</b>
-          <small>de ponta a ponta, sem intervenção manual</small>
-        </div>
+      <a class="projeto-card revelar" href="case/esteira-qa.html">
+        <div class="thumb"><img src="assets/projetos/case.jpg" alt="Página do case: 2.096 cenários, −96% de material de teste" loading="lazy"></div>
         <div class="projeto-corpo">
-          <h3>Esteira de automação de QA</h3>
-          <p>Cria assinaturas pela API, acompanha a orquestração no Salesforce minuto a minuto, valida mais de 240 campos e entrega a evidência pronta. Cerca de 1.012 h liberadas por ciclo de regressão.</p>
+          <span class="selo-tipo">Case · Telecom e streaming</span>
+          <h3>Esteira de automação de QA <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>Cria assinaturas pela API, acompanha a orquestração no Salesforce, valida mais de 240 campos e entrega a evidência pronta. Cerca de 1.012 h liberadas por ciclo de regressão.</p>
           <ul class="chips"><li>Playwright</li><li>Newman</li><li>Salesforce</li><li>Oracle</li></ul>
-          <span class="ir">Ler o case →</span>
         </div>
       </a>
-      <a class="projeto-card" href="https://github.com/marcossilva-qa/qa-e2e-pipeline">
-        <div class="projeto-capa verde">
-          <span class="tipo">Código aberto · GitHub</span>
-          <b>qa-e2e-pipeline</b>
-          <small>API + UI + CI com relatórios publicados</small>
-        </div>
+      <a class="projeto-card revelar" href="https://github.com/marcossilva-qa/qa-e2e-pipeline">
+        <div class="thumb"><img src="assets/projetos/playwright.jpg" alt="Relatório do Playwright com todos os testes aprovados" loading="lazy"></div>
         <div class="projeto-corpo">
-          <h3>Esteira E2E pública</h3>
-          <p>A arquitetura do case contra uma loja pública: massa data-driven com Newman, espera com critério de pronto, validação com Playwright e Page Objects, evidência com senha mascarada e CI no GitHub Actions.</p>
+          <span class="selo-tipo">Código aberto · GitHub</span>
+          <h3>qa-e2e-pipeline <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>A arquitetura do case contra uma loja pública: massa data-driven com Newman, espera com critério de pronto, validação com Playwright e Page Objects, e CI no GitHub Actions.</p>
           <ul class="chips"><li>TypeScript</li><li>Playwright</li><li>Newman</li><li>GitHub Actions</li></ul>
-          <span class="ir">Ver o código →</span>
+        </div>
+      </a>
+      <a class="projeto-card revelar" href="https://marcossilva-qa.github.io/qa-e2e-pipeline/">
+        <div class="thumb"><img src="assets/projetos/evidencia.jpg" alt="Relatório de evidência com campos esperados e obtidos" loading="lazy"></div>
+        <div class="projeto-corpo">
+          <span class="selo-tipo">Ao vivo · atualizado todo dia útil</span>
+          <h3>Relatórios e evidências <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>O resultado da última execução do CI: relatório da massa sem credenciais, relatório do Playwright e uma evidência por cenário, com print de cada tela e esperado × obtido.</p>
+          <ul class="chips"><li>Evidência</li><li>htmlextra</li><li>GitHub Pages</li></ul>
         </div>
       </a>
     </div>
   </section>
 
-  <!-- ─────────────── COMPETÊNCIAS ─────────────── -->
+  <!-- ─────────────── STACK ─────────────── -->
   <section id="competencias">
-    <p class="rotulo">Competências</p>
-    <h2>Ferramentas e práticas</h2>
-    <div class="grade g3">
-      <div class="card"><h3>Automação</h3><ul class="chips"><li>Playwright</li><li>TypeScript</li><li>Node.js</li><li>Newman</li><li>Postman</li><li>Selenium</li><li>Python</li></ul></div>
-      <div class="card"><h3>Plataformas e dados</h3><ul class="chips"><li>Salesforce (Classic e Lightning)</li><li>Order Management</li><li>APIs REST</li><li>Oracle / SQL</li></ul></div>
-      <div class="card"><h3>Engenharia de testes</h3><ul class="chips"><li>Page Object Model</li><li>Testes orientados a dados</li><li>Pirâmide de testes</li><li>Validação de contrato</li><li>CI/CD · GitHub Actions</li><li>ESLint · Prettier</li><li>Git</li></ul></div>
+    <div class="revelar">
+      <p class="rotulo">Minhas tecnologias</p>
+      <h2>Stack e ferramentas</h2>
+      <p class="sub">As ferramentas com que mais trabalho no dia a dia de automação.</p>
+    </div>
+    <div class="stack revelar">
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/playwright/playwright-original.svg" alt=""></div>Playwright</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt=""></div>TypeScript</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg" alt=""></div>Postman · Newman</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cypressio/cypressio-original.svg" alt=""></div>Cypress</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/selenium/selenium-original.svg" alt=""></div>Selenium</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/salesforce/salesforce-original.svg" alt=""></div>Salesforce</div>
+    </div>
+    <p class="subtitulo revelar">Linguagens, dados e entrega</p>
+    <div class="stack revelar">
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt=""></div>JavaScript</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt=""></div>Java</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt=""></div>Python</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt=""></div>Node.js</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt=""></div>SQL</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt=""></div>Git</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gitlab/gitlab-original.svg" alt=""></div>GitLab CI</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/githubactions/githubactions-original.svg" alt=""></div>GitHub Actions</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt=""></div>Jenkins</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jira/jira-original.svg" alt=""></div>Jira</div>
+      <div class="ferramenta"><div class="icone texto">BDD</div>Gherkin · Cucumber</div>
+      <div class="ferramenta"><div class="icone texto">RF</div>Robot Framework</div>
     </div>
   </section>
 
   <!-- ─────────────── CONTATO ─────────────── -->
   <section id="contato">
-    <div class="card contato">
+    <div class="revelar">
       <p class="rotulo">Contato</p>
-      <h2>Vamos conversar sobre qualidade?</h2>
-      <p class="sub" style="margin:0 auto 26px">Aberto a posições de QA Automation e a projetos de automação de testes de ponta a ponta.</p>
-      <div class="acoes">
-        <a class="btn primario" href="https://www.linkedin.com/in/marcos-silva-1046a328a">LinkedIn</a>
-        <a class="btn" href="mailto:marcos.silva020594@gmail.com">E-mail</a>
-        <a class="btn" href="https://github.com/marcossilva-qa">GitHub</a>
-      </div>
+      <h2>Vamos conversar?</h2>
+      <p class="sub">Se você tem uma oportunidade em QA Automation ou um projeto de automação de testes, fique à vontade para me chamar.</p>
+    </div>
+    <div class="contatos revelar">
+      <a class="contato-card" href="mailto:marcos.silva020594@gmail.com">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.2-.5 7.8 6.1L19.8 5H4.2zM20 6.6l-7.38 5.77a1 1 0 0 1-1.240 0L4 6.6v11.9c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.6z"/></svg></span>
+        <div><b>E-mail</b><span>marcos.silva020594@gmail.com</span></div>
+      </a>
+      <a class="contato-card" href="https://www.linkedin.com/in/marcos-silva-1046a328a">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+        <div><b>LinkedIn</b><span>in/marcos-silva-1046a328a</span></div>
+      </a>
+      <a class="contato-card" href="https://github.com/marcossilva-qa">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.830 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></span>
+        <div><b>GitHub</b><span>github.com/marcossilva-qa</span></div>
+      </a>
     </div>
   </section>
 
 </main>
 
-<footer class="wrap">© 2026 Marcos Silva · Feito à mão, publicado no GitHub Pages.</footer>
+<footer class="wrap">© 2026 Marcos Silva · Feito à mão e testado, publicado no GitHub Pages.</footer>
+
+<nav class="tabbar" aria-label="Navegação">
+  <a href="#inicio"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg>Início</a>
+  <a href="#sobre"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Sobre</a>
+  <a href="#projetos"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>Projetos</a>
+  <a href="#contato"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contato</a>
+</nav>
 
 <script>
   document.getElementById('tema').addEventListener('click', () => {
     const r = document.documentElement;
-    const escuro = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-    r.dataset.theme = escuro ? 'light' : 'dark';
+    r.dataset.theme = r.dataset.theme === 'light' ? 'dark' : 'light';
     try { localStorage.setItem('tema', r.dataset.theme) } catch (e) {}
   });
+  // Entrada dos blocos ao rolar a página.
+  const alvos = document.querySelectorAll('.revelar');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((itens) => {
+      for (const it of itens) if (it.isIntersecting) { it.target.classList.add('visivel'); io.unobserve(it.target) }
+    }, { threshold: 0.12 });
+    alvos.forEach((el) => io.observe(el));
+  } else alvos.forEach((el) => el.classList.add('visivel'));
 </script>
 </body>
 </html>
