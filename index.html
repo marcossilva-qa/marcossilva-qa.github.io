@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Marcos Silva · QA Automation</title>
-<meta name="description" content="Marcos Silva, Senior QA Engineer. Automação de testes de ponta a ponta com Playwright, TypeScript, Newman e Salesforce.">
+<meta name="description" content="Marcos Silva, Senior QA Engineer. Automação de testes Web, Mobile e API de ponta a ponta, do banco de dados à interface, com Playwright, Cypress, Appium e Postman.">
 <meta property="og:title" content="Marcos Silva · QA Automation">
-<meta property="og:description" content="Automação de QA de ponta a ponta: da massa de teste pela API à evidência pronta.">
+<meta property="og:description" content="Automação de testes Web, Mobile e API, de ponta a ponta: do banco de dados à interface.">
 <meta property="og:image" content="https://marcossilva-qa.github.io/assets/foto.jpg">
 <meta name="theme-color" content="#050b18">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231d4ed8'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' fill='white' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
@@ -41,8 +41,8 @@
   <header class="topo-home" id="inicio">
     <div class="revelar">
       <p class="saudacao">&gt; Olá, eu sou o Marcos 👋</p>
-      <h1>Automatizo o QA <span class="grad">de ponta a ponta</span>, da API à evidência.</h1>
-      <p class="lead">Senior QA Engineer, certificado ISTQB Advanced. Construo esteiras que criam a massa de teste, acompanham o processamento no sistema, validam cada campo e entregam a evidência pronta, para o time testar mais e documentar menos.</p>
+      <h1>Automação de testes <span class="grad">Web, Mobile e API</span>, de ponta a ponta.</h1>
+      <p class="lead">Senior QA Engineer, certificado ISTQB Advanced. Automatizo testes Web, Mobile e API integrados ao banco de dados: crio a massa pela API, valido cada campo na interface e no banco e entrego o resultado pronto, para o time testar mais e documentar menos.</p>
       <div class="acoes">
         <a class="btn primario" href="#projetos">Ver projetos</a>
         <a class="btn" href="#contato">Entrar em contato</a>
@@ -55,8 +55,8 @@
       <div class="janela codigo">
         <div class="barra"><i></i><i></i><i></i>qa.config.ts</div>
 <pre><span class="k">const</span> qa = {
-  foco: [<span class="s">'api'</span>, <span class="s">'e2e'</span>, <span class="s">'evidência'</span>],
-  stack: [<span class="s">'playwright'</span>, <span class="s">'ts'</span>],
+  foco: [<span class="s">'web'</span>, <span class="s">'mobile'</span>, <span class="s">'api'</span>],
+  banco: [<span class="s">'sql'</span>, <span class="s">'nosql'</span>],
   divergencias: <span class="a">0</span>,
 };</pre>
       </div>
@@ -93,9 +93,9 @@
       </div>
     </div>
     <div class="pilares revelar">
-      <div class="pilar"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 13l2 2 4-4"/></svg><b>Automação E2E</b><small>Playwright, Cypress, Selenium</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 13l2 2 4-4"/></svg><b>Web e Mobile</b><small>Playwright, Cypress, Selenium, Appium</small></div>
       <div class="pilar"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13 5l-2 14"/></svg><b>Testes de API</b><small>Postman, Newman, contrato</small></div>
-      <div class="pilar"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5V12a4 4 0 0 0 4 4h5.5M18 15.5V12"/><path d="m16 10 2 2 2-2"/></svg><b>CI/CD</b><small>GitLab CI, GitHub Actions</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><b>Banco de dados e CI/CD</b><small>SQL, Oracle, MongoDB, pipelines</small></div>
       <div class="pilar"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><b>ISTQB Advanced</b><small>Test Analyst (CTAL-TA)</small></div>
     </div>
   </section>
@@ -193,15 +193,23 @@
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg" alt=""></div>Postman · Newman</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cypressio/cypressio-original.svg" alt=""></div>Cypress</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/selenium/selenium-original.svg" alt=""></div>Selenium</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/appium.svg" alt=""></div>Appium</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/salesforce/salesforce-original.svg" alt=""></div>Salesforce</div>
     </div>
-    <p class="subtitulo revelar">Linguagens, dados e entrega</p>
+    <p class="subtitulo revelar">Bancos de dados</p>
+    <div class="stack revelar">
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/oracle/oracle-original.svg" alt=""></div>Oracle</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt=""></div>SQL Server</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt=""></div>PostgreSQL</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt=""></div>MySQL</div>
+      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt=""></div>MongoDB</div>
+    </div>
+    <p class="subtitulo revelar">Linguagens e entrega</p>
     <div class="stack revelar">
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt=""></div>JavaScript</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt=""></div>Java</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt=""></div>Python</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt=""></div>Node.js</div>
-      <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt=""></div>SQL</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt=""></div>Git</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gitlab/gitlab-original.svg" alt=""></div>GitLab CI</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/githubactions/githubactions-original.svg" alt=""></div>GitHub Actions</div>
