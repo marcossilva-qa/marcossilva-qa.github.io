@@ -17,7 +17,6 @@ window.EN = {
   'hero.b2': 'Get in touch',
   'hero.b3': 'Résumé (PDF)',
   'hero.cv': 'assets/resume-marcos-silva.pdf',
-  'hero.codigo': '<span class="k">const</span> qa = {\n  focus: [<span class="s">\'web\'</span>, <span class="s">\'mobile\'</span>, <span class="s">\'api\'</span>],\n  db: [<span class="s">\'sql\'</span>, <span class="s">\'nosql\'</span>],\n  mismatches: <span class="a">0</span>,\n};',
   'hero.term': '<span class="c">$</span> npm run e2e -- cancelamento --todos\n<span class="a">1</span> pre-check      <span class="v">✓</span> 3 scenarios  <span class="s">⏭</span> 1 standby\n<span class="a">2</span> data (API)     <span class="v">✓</span> 39 assertions · 0 failures\n<span class="a">3</span> wait           <span class="v">✓</span> ready after 1 read\n<span class="a">4</span> UI validation  <span class="v">✓</span> 3 passed\n<span class="a">5</span> evidence       <span class="v">✓</span> report generated',
 
   'sobre.rot': 'About me',
