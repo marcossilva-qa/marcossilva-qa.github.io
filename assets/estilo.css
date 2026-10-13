@@ -208,6 +208,10 @@ footer { color: var(--muted); font-size: 13px; padding: 48px 0 40px; text-align:
 .linha-tempo .quando { font: 500 12.5px var(--mono); color: var(--muted) }
 .linha-tempo h3 { margin: 4px 0 2px } .linha-tempo .onde { color: var(--accent); font-weight: 500; margin: 0 0 8px }
 .linha-tempo p { color: var(--ink-2); margin: 0 0 10px; font-size: 15px; max-width: 72ch }
+.atividades { list-style: none; margin: 4px 0 14px; padding: 0; display: grid; gap: 6px; max-width: 76ch }
+.atividades li { position: relative; padding-left: 20px; color: var(--ink-2); font-size: 15px }
+.atividades li::before { content: '▸'; position: absolute; left: 2px; top: 0; color: var(--accent) }
+.atividades b { color: var(--ink) }
 
 /* projetos */
 .projetos { display: grid; gap: 18px }
