@@ -1,4 +1,4 @@
-/* Tema escuro (padrão) e claro: o botão ◐ alterna e lembra a escolha. */
+/* Tema escuro (padrão) e claro: o botão de sol/lua alterna e lembra a escolha. */
 :root {
   --bg: #050b18; --bg-2: #081227; --surface: rgba(15, 27, 51, .72); --surface-solid: #0d1a33; --surface-2: #0a1530;
   --ink: #eaf1ff; --ink-2: #b7c4dc; --muted: #7d8db0; --line: rgba(120, 155, 230, .16);
@@ -37,9 +37,10 @@ a { color: var(--accent); text-decoration: none } a:hover { text-decoration: und
 nav.topo { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 70%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line) }
 nav.topo .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px }
 .marca { font-weight: 700; color: var(--ink); letter-spacing: -.01em } .marca:hover { text-decoration: none }
-nav.topo ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 14px; font-weight: 500 }
+nav.topo ul { display: flex; align-items: center; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 14px; font-weight: 500 }
 nav.topo ul a { color: var(--ink-2) } nav ul a:hover { color: var(--ink); text-decoration: none }
-@media (max-width: 640px) { nav.topo ul li:not(.sempre) { display: none } }
+@media (max-width: 959px) { nav.topo ul { gap: 16px } }
+@media (max-width: 759px) { nav.topo ul li:not(.sempre) { display: none } }
 
 /* hero */
 .hero { padding: 72px 0 40px }
@@ -139,14 +140,26 @@ ul.lista { margin: 0; padding-left: 20px; color: var(--ink-2) } ul.lista li { ma
 .contato .acoes { justify-content: center }
 footer { color: var(--muted); font-size: 13px; padding: 48px 0 40px; text-align: center }
 .nota { font-size: 13px; color: var(--muted); margin: 14px 0 0 }
-.tema { background: none; border: 1px solid var(--line); color: var(--ink-2); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; font-size: 15px }
+/* controles do topo: idioma e tema */
+.controles { display: flex; align-items: center; gap: 10px }
+.idioma { display: flex; padding: 3px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface) }
+.idioma button { border: 0; background: none; color: var(--muted); font: 700 12px/1 var(--mono); letter-spacing: .04em; padding: 7px 10px; border-radius: 999px; cursor: pointer; transition: background .2s, color .2s }
+.idioma button:hover { color: var(--ink) }
+.idioma button[aria-pressed="true"] { background: var(--ink); color: var(--bg) }
+.tema { display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); color: var(--ink); border-radius: 50%; width: 38px; height: 38px; cursor: pointer; transition: border-color .2s, box-shadow .2s, transform .3s }
+.tema:hover { border-color: var(--accent); box-shadow: var(--glow) }
+.tema:active { transform: rotate(-30deg) }
+.tema svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+.tema .lua { display: none }
+:root[data-theme="light"] .tema .sol { display: none }
+:root[data-theme="light"] .tema .lua { display: block }
+.idioma button:focus-visible, .tema:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
 
 /* ── home ─────────────────────────────────────────────── */
 .voltar { display: inline-block; font-size: 14px; font-weight: 500; color: var(--muted); margin-bottom: 18px }
 .marca { display: inline-flex; align-items: center; gap: 10px; font-size: 17px }
 .marca em { font-style: normal; color: var(--accent) }
-.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; font: 800 14px Inter, sans-serif; color: #fff; letter-spacing: -.02em;
-  background: linear-gradient(140deg, #1d4ed8, #4f8dff 55%, #38bdf8); box-shadow: 0 0 18px rgba(79, 141, 255, .45) }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: block; box-shadow: 0 0 18px rgba(79, 141, 255, .45) }
 
 /* topo */
 .topo-home { display: grid; gap: 48px; align-items: center; padding: 72px 0 32px; min-height: calc(100vh - 60px) }
@@ -154,9 +167,6 @@ footer { color: var(--muted); font-size: 13px; padding: 48px 0 40px; text-align:
 .saudacao { font: 500 14px var(--mono); color: var(--accent); margin: 0; display: inline-flex; gap: 8px; align-items: center; padding: 6px 12px; border-radius: 999px; background: var(--accent-soft); border: 1px solid var(--line) }
 .topo-home h1 { font-size: clamp(38px, 6vw, 64px); max-width: 15ch; margin: 18px 0 }
 .topo-home h1 .grad { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent }
-.disponivel { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-2); margin-top: 22px }
-.disponivel::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px var(--ok-soft); animation: pulso 2s infinite }
-@keyframes pulso { 50% { box-shadow: 0 0 0 8px transparent } }
 
 /* palco: foto + terminal flutuando */
 .palco { position: relative; min-height: 460px; display: grid; place-items: center }
@@ -248,7 +258,7 @@ footer { color: var(--muted); font-size: 13px; padding: 48px 0 40px; text-align:
 /* entrada ao rolar (só com JS e sem preferência por menos movimento) */
 .js .revelar { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease }
 .js .revelar.visivel { opacity: 1; transform: none }
-@media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none } .janela, .disponivel::before { animation: none } }
+@media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none } .janela { animation: none } }
 
 /* ── página do case ───────────────────────────────────── */
 .topo-case { display: grid; gap: 40px; align-items: center }

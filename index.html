@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Marcos Silva · QA Automation</title>
-<meta name="description" content="Marcos Silva, Senior QA Engineer. Automação de testes Web, Mobile e API de ponta a ponta, do banco de dados à interface, com Playwright, Cypress, Appium e Postman.">
+<meta name="description" data-i18n-attr="content:meta.desc" content="Marcos Silva, Senior QA Engineer. Automação de testes Web, Mobile e API de ponta a ponta, do banco de dados à interface, com Playwright, Cypress, Appium e Postman.">
 <meta property="og:title" content="Marcos Silva · QA Automation">
 <meta property="og:description" content="Automação de testes Web, Mobile e API, de ponta a ponta: do banco de dados à interface.">
 <meta property="og:image" content="https://marcossilva-qa.github.io/assets/foto.jpg">
 <meta name="theme-color" content="#050b18">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231d4ed8'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' fill='white' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -23,14 +23,17 @@
 
 <nav class="topo">
   <div class="wrap">
-    <a class="marca" href="#inicio"><span class="logo">MS</span><span>Marcos <em>Silva</em></span></a>
+    <a class="marca" href="#inicio"><img class="logo" src="assets/logo.svg" alt="" width="36" height="36"><span>Marcos <em>Silva</em></span></a>
     <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#experiencia">Experiência</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li class="sempre"><button class="tema" id="tema" aria-label="Alternar tema claro/escuro">◐</button></li>
+      <li><a href="#inicio" data-i18n="nav.inicio">Início</a></li>
+      <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
+      <li><a href="#experiencia" data-i18n="nav.exp">Experiência</a></li>
+      <li><a href="#projetos" data-i18n="nav.proj">Projetos</a></li>
+      <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
+      <li class="sempre controles">
+        <div class="idioma" role="group" aria-label="Idioma / Language"><button type="button" data-lang="pt" lang="pt-BR" aria-pressed="true">PT</button><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button></div>
+        <button type="button" class="tema" id="tema" aria-label="Mudar para o modo claro"><svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      </li>
     </ul>
   </div>
 </nav>
@@ -40,21 +43,20 @@
   <!-- ─────────────── INÍCIO ─────────────── -->
   <header class="topo-home" id="inicio">
     <div class="revelar">
-      <p class="saudacao">&gt; Olá, eu sou o Marcos 👋</p>
-      <h1>Automação de testes <span class="grad">Web, Mobile e API</span>, de ponta a ponta.</h1>
-      <p class="lead">Senior QA Engineer, certificado ISTQB Advanced. Automatizo testes Web, Mobile e API integrados ao banco de dados: crio a massa pela API, valido cada campo na interface e no banco e entrego o resultado pronto, para o time testar mais e documentar menos.</p>
+      <p class="saudacao" data-i18n="hero.oi">&gt; Olá, eu sou o Marcos 👋</p>
+      <h1 data-i18n="hero.h1">Automação de testes <span class="grad">Web, Mobile e API</span>, de ponta a ponta.</h1>
+      <p class="lead" data-i18n="hero.lead">Senior QA Engineer, certificado ISTQB Advanced. Automatizo testes Web, Mobile e API integrados ao banco de dados: crio a massa pela API, valido cada campo na interface e no banco e entrego o resultado pronto, para o time testar mais e documentar menos.</p>
       <div class="acoes">
-        <a class="btn primario" href="#projetos">Ver projetos</a>
-        <a class="btn" href="#contato">Entrar em contato</a>
-        <a class="btn" href="assets/curriculo-marcos-silva.pdf">Currículo (PDF)</a>
+        <a class="btn primario" href="#projetos" data-i18n="hero.b1">Ver projetos</a>
+        <a class="btn" href="#contato" data-i18n="hero.b2">Entrar em contato</a>
+        <a class="btn" href="assets/curriculo-marcos-silva.pdf" data-i18n="hero.b3">Currículo (PDF)</a>
       </div>
-      <div class="disponivel">Aberto a novas oportunidades</div>
     </div>
 
     <div class="palco revelar" aria-hidden="true">
       <div class="janela codigo">
         <div class="barra"><i></i><i></i><i></i>qa.config.ts</div>
-<pre><span class="k">const</span> qa = {
+<pre data-i18n="hero.codigo"><span class="k">const</span> qa = {
   foco: [<span class="s">'web'</span>, <span class="s">'mobile'</span>, <span class="s">'api'</span>],
   banco: [<span class="s">'sql'</span>, <span class="s">'nosql'</span>],
   divergencias: <span class="a">0</span>,
@@ -63,7 +65,7 @@
       <div class="retrato"><span>MS</span><img src="assets/foto.jpg" alt="" onerror="this.remove()"></div>
       <div class="janela execucao">
         <div class="barra"><i></i><i></i><i></i>terminal</div>
-<pre><span class="c">$</span> npm run e2e -- cancelamento --todos
+<pre data-i18n="hero.term"><span class="c">$</span> npm run e2e -- cancelamento --todos
 <span class="a">1</span> pré-checagem   <span class="v">✓</span> 3 cenários  <span class="s">⏭</span> 1 standby
 <span class="a">2</span> massa (API)    <span class="v">✓</span> 39 asserções · 0 falhas
 <span class="a">3</span> espera         <span class="v">✓</span> pronto em 1 leitura
@@ -76,26 +78,26 @@
   <!-- ─────────────── SOBRE ─────────────── -->
   <section id="sobre">
     <div class="revelar">
-      <p class="rotulo">Sobre mim</p>
-      <h2>Quem eu sou</h2>
+      <p class="rotulo" data-i18n="sobre.rot">Sobre mim</p>
+      <h2 data-i18n="sobre.h2">Quem eu sou</h2>
     </div>
     <div class="sobre revelar">
       <div>
-        <p>Sou especialista em automação de testes com foco em fluxos ponta a ponta de sistemas corporativos: APIs, Salesforce, bancos de dados e as telas por onde o dado passa.</p>
-        <p>Gosto de transformar processos de QA manuais, lentos e sujeitos a erro em esteiras confiáveis. Faço isso com testes orientados a dados, regras de negócio testáveis, evidência gerada sem operador e critérios objetivos no lugar do "acho que já processou".</p>
-        <p>No meu último projeto, uma esteira que construí passou a cobrir mais de 2 mil cenários de assinaturas de streaming e reduziu em 94% o esforço humano de um ciclo de regressão.</p>
+        <p data-i18n="sobre.p1">Sou especialista em automação de testes com foco em fluxos ponta a ponta de sistemas corporativos: APIs, Salesforce, bancos de dados e as telas por onde o dado passa.</p>
+        <p data-i18n="sobre.p2">Gosto de transformar processos de QA manuais, lentos e sujeitos a erro em esteiras confiáveis. Faço isso com testes orientados a dados, regras de negócio testáveis, evidência gerada sem operador e critérios objetivos no lugar do "acho que já processou".</p>
+        <p data-i18n="sobre.p3">No meu último projeto, uma esteira que construí passou a cobrir mais de 2 mil cenários de assinaturas de streaming e reduziu em 94% o esforço humano de um ciclo de regressão.</p>
       </div>
       <div class="numeros">
-        <div><b>2.096</b><span>cenários automatizados de ponta a ponta</span></div>
-        <div><b>−94%</b><span>de esforço humano por ciclo de regressão</span></div>
-        <div><b>−96%</b><span>de material de teste a manter</span></div>
-        <div><b>10+</b><span>anos entre QA, testes e integrações</span></div>
+        <div><b>2.096</b><span data-i18n="num.1">cenários automatizados de ponta a ponta</span></div>
+        <div><b>−94%</b><span data-i18n="num.2">de esforço humano por ciclo de regressão</span></div>
+        <div><b>−96%</b><span data-i18n="num.3">de material de teste a manter</span></div>
+        <div><b>10+</b><span data-i18n="num.4">anos entre QA, testes e integrações</span></div>
       </div>
     </div>
     <div class="pilares revelar">
-      <div class="pilar"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 13l2 2 4-4"/></svg><b>Web e Mobile</b><small>Playwright, Cypress, Selenium, Appium</small></div>
-      <div class="pilar"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13 5l-2 14"/></svg><b>Testes de API</b><small>Postman, Newman, contrato</small></div>
-      <div class="pilar"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><b>Banco de dados e CI/CD</b><small>SQL, Oracle, MongoDB, pipelines</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 13l2 2 4-4"/></svg><b data-i18n="pil.1">Web e Mobile</b><small>Playwright, Cypress, Selenium, Appium</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13 5l-2 14"/></svg><b data-i18n="pil.2">Testes de API</b><small data-i18n="pil.2s">Postman, Newman, contrato</small></div>
+      <div class="pilar"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><b data-i18n="pil.3">Banco de dados e CI/CD</b><small>SQL, Oracle, MongoDB, pipelines</small></div>
       <div class="pilar"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><b>ISTQB Advanced</b><small>Test Analyst (CTAL-TA)</small></div>
     </div>
   </section>
@@ -103,78 +105,78 @@
   <!-- ─────────────── EXPERIÊNCIA ─────────────── -->
   <section id="experiencia">
     <div class="revelar">
-      <p class="rotulo">Experiência</p>
-      <h2>Trajetória</h2>
+      <p class="rotulo" data-i18n="exp.rot">Experiência</p>
+      <h2 data-i18n="exp.h2">Trajetória</h2>
     </div>
     <ol class="linha-tempo">
       <li class="revelar">
-        <span class="quando">out/2023 — atual · híbrido</span>
+        <span class="quando" data-i18n="exp.1q">out/2023 — atual · híbrido</span>
         <h3>Senior QA Engineer</h3>
-        <p class="onde">Hitss Brasil · produto de assinaturas de TV por streaming em telecom</p>
-        <p>Criei a esteira de automação de QA de ponta a ponta do produto: massa via API, ações de ciclo de vida (aquisição, suspensão, retomada, cancelamento, chargeback, revogação e expiração), acompanhamento da orquestração no Salesforce, validação no banco e no e-mail do cliente e evidência gerada automaticamente. Resultado: 2.096 cenários cobertos e −94% de esforço humano por ciclo de regressão.</p>
-        <p>Também automatizei testes Mobile com Appium e APIs no Postman com cenários BDD (Gherkin e Cucumber.js), rodei suítes no GitLab CI/CD e estruturei cadernos de teste no OpenText Octane.</p>
+        <p class="onde" data-i18n="exp.1o">Hitss Brasil · produto de assinaturas de TV por streaming em telecom</p>
+        <p data-i18n="exp.1p">Criei a esteira de automação de QA de ponta a ponta do produto: massa via API, ações de ciclo de vida (aquisição, suspensão, retomada, cancelamento, chargeback, revogação e expiração), acompanhamento da orquestração no Salesforce, validação no banco e no e-mail do cliente e evidência gerada automaticamente. Resultado: 2.096 cenários cobertos e −94% de esforço humano por ciclo de regressão.</p>
+        <p data-i18n="exp.1p2">Também automatizei testes Mobile com Appium e APIs no Postman com cenários BDD (Gherkin e Cucumber.js), rodei suítes no GitLab CI/CD e estruturei cadernos de teste no OpenText Octane.</p>
         <ul class="chips"><li>Playwright</li><li>Appium</li><li>TypeScript</li><li>Newman</li><li>Salesforce</li><li>Cucumber.js</li><li>GitLab CI/CD</li><li>SQL</li></ul>
       </li>
       <li class="revelar">
-        <span class="quando">mar/2021 — out/2023 · remoto</span>
+        <span class="quando" data-i18n="exp.2q">mar/2021 — out/2023 · remoto</span>
         <h3>Senior QA Automation Engineer</h3>
         <p class="onde">Stigma System</p>
-        <p>Cenários de teste a partir de regras de negócio, desenvolvimento e manutenção de automações de APIs, testes funcionais e apoio à aceitação do usuário (UAT).</p>
-        <ul class="chips"><li>Automação de APIs</li><li>Testes funcionais</li><li>UAT</li></ul>
+        <p data-i18n="exp.2p">Cenários de teste a partir de regras de negócio, desenvolvimento e manutenção de automações de APIs, testes funcionais e apoio à aceitação do usuário (UAT).</p>
+        <ul class="chips" data-i18n="exp.2c"><li>Automação de APIs</li><li>Testes funcionais</li><li>UAT</li></ul>
       </li>
       <li class="revelar">
-        <span class="quando">jan/2018 — dez/2020 · remoto</span>
-        <h3>Analista de Integrações e Automação de APIs Pleno</h3>
+        <span class="quando" data-i18n="exp.3q">jan/2018 — dez/2020 · remoto</span>
+        <h3 data-i18n="exp.3t">Analista de Integrações e Automação de APIs Pleno</h3>
         <p class="onde">MR Consultoria</p>
-        <p>Integrações REST em PHP e JavaScript para provedores de internet, conectando a URA a sistemas como IXCSoft, MK Solutions, Receitanet, Controllr e SGP, com testes e documentação das integrações de faturas e extratos de conexão.</p>
+        <p data-i18n="exp.3p">Integrações REST em PHP e JavaScript para provedores de internet, conectando a URA a sistemas como IXCSoft, MK Solutions, Receitanet, Controllr e SGP, com testes e documentação das integrações de faturas e extratos de conexão.</p>
         <ul class="chips"><li>APIs REST</li><li>PHP</li><li>JavaScript</li><li>Jenkins</li><li>Scrum</li></ul>
       </li>
       <li class="revelar">
-        <span class="quando">nov/2014 — nov/2016 · Salvador, BA</span>
-        <h3>Estagiário de Quality Assurance</h3>
+        <span class="quando" data-i18n="exp.4q">nov/2014 — nov/2016 · Salvador, BA</span>
+        <h3 data-i18n="exp.4t">Estagiário de Quality Assurance</h3>
         <p class="onde">NPR Brasil</p>
-        <p>Testes funcionais em sistema financeiro web, modelagem de massas de dados e documentação.</p>
+        <p data-i18n="exp.4p">Testes funcionais em sistema financeiro web, modelagem de massas de dados e documentação.</p>
       </li>
     </ol>
     <div class="grade g2 revelar">
-      <div class="card"><h3>Formação</h3><p><b>Tecnólogo em Análise e Desenvolvimento de Sistemas</b><br>Universidade Pitágoras Unopar Anhanguera · 2018–2020</p></div>
-      <div class="card"><h3>Certificação e idiomas</h3><p><b>ISTQB CTAL-TA</b> · Certified Tester Advanced Level, Test Analyst<br>Inglês avançado (C1)</p></div>
+      <div class="card"><h3 data-i18n="form.h">Formação</h3><p data-i18n="form.p"><b>Tecnólogo em Análise e Desenvolvimento de Sistemas</b><br>Universidade Pitágoras Unopar Anhanguera · 2018–2020</p></div>
+      <div class="card"><h3 data-i18n="cert.h">Certificação e idiomas</h3><p data-i18n="cert.p"><b>ISTQB CTAL-TA</b> · Certified Tester Advanced Level, Test Analyst<br>Inglês avançado (C1)</p></div>
     </div>
   </section>
 
   <!-- ─────────────── PROJETOS ─────────────── -->
   <section id="projetos">
     <div class="revelar">
-      <p class="rotulo">Meus projetos</p>
-      <h2>Projetos em destaque</h2>
-      <p class="sub">Um case real, anonimizado, e a mesma arquitetura em código aberto, com CI e relatórios publicados, para você ver como eu escrevo testes.</p>
+      <p class="rotulo" data-i18n="proj.rot">Meus projetos</p>
+      <h2 data-i18n="proj.h2">Projetos em destaque</h2>
+      <p class="sub" data-i18n="proj.sub">Um case real, anonimizado, e a mesma arquitetura em código aberto, com CI e relatórios publicados, para você ver como eu escrevo testes.</p>
     </div>
     <div class="projetos">
       <a class="projeto-card revelar" href="case/esteira-qa.html">
-        <div class="thumb"><img src="assets/projetos/case.jpg" alt="Página do case: 2.096 cenários, −96% de material de teste" loading="lazy"></div>
+        <div class="thumb"><img src="assets/projetos/case.jpg" alt="Página do case: 2.096 cenários, −96% de material de teste" data-i18n-attr="alt:proj.1alt" loading="lazy"></div>
         <div class="projeto-corpo">
-          <span class="selo-tipo">Case · Telecom e streaming</span>
-          <h3>Esteira de automação de QA <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
-          <p>Cria assinaturas pela API, acompanha a orquestração no Salesforce, valida mais de 240 campos e entrega a evidência pronta. Cerca de 1.012 h liberadas por ciclo de regressão.</p>
+          <span class="selo-tipo" data-i18n="proj.1s">Case · Telecom e streaming</span>
+          <h3 data-i18n="proj.1t">Esteira de automação de QA <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p data-i18n="proj.1p">Cria assinaturas pela API, acompanha a orquestração no Salesforce, valida mais de 240 campos e entrega a evidência pronta. Cerca de 1.012 h liberadas por ciclo de regressão.</p>
           <ul class="chips"><li>Playwright</li><li>Newman</li><li>Salesforce</li><li>Oracle</li></ul>
         </div>
       </a>
       <a class="projeto-card revelar" href="https://github.com/marcossilva-qa/qa-e2e-pipeline">
-        <div class="thumb"><img src="assets/projetos/playwright.jpg" alt="Relatório do Playwright com todos os testes aprovados" loading="lazy"></div>
+        <div class="thumb"><img src="assets/projetos/playwright.jpg" alt="Relatório do Playwright com todos os testes aprovados" data-i18n-attr="alt:proj.2alt" loading="lazy"></div>
         <div class="projeto-corpo">
-          <span class="selo-tipo">Código aberto · GitHub</span>
+          <span class="selo-tipo" data-i18n="proj.2s">Código aberto · GitHub</span>
           <h3>qa-e2e-pipeline <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
-          <p>A arquitetura do case contra uma loja pública: massa data-driven com Newman, espera com critério de pronto, validação com Playwright e Page Objects, e CI no GitHub Actions.</p>
+          <p data-i18n="proj.2p">A arquitetura do case contra uma loja pública: massa data-driven com Newman, espera com critério de pronto, validação com Playwright e Page Objects, e CI no GitHub Actions.</p>
           <ul class="chips"><li>TypeScript</li><li>Playwright</li><li>Newman</li><li>GitHub Actions</li></ul>
         </div>
       </a>
       <a class="projeto-card revelar" href="https://marcossilva-qa.github.io/qa-e2e-pipeline/">
-        <div class="thumb"><img src="assets/projetos/evidencia.jpg" alt="Relatório de evidência com campos esperados e obtidos" loading="lazy"></div>
+        <div class="thumb"><img src="assets/projetos/evidencia.jpg" alt="Relatório de evidência com campos esperados e obtidos" data-i18n-attr="alt:proj.3alt" loading="lazy"></div>
         <div class="projeto-corpo">
-          <span class="selo-tipo">Ao vivo · atualizado todo dia útil</span>
-          <h3>Relatórios e evidências <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
-          <p>O resultado da última execução do CI: relatório da massa sem credenciais, relatório do Playwright e uma evidência por cenário, com print de cada tela e esperado × obtido.</p>
-          <ul class="chips"><li>Evidência</li><li>htmlextra</li><li>GitHub Pages</li></ul>
+          <span class="selo-tipo" data-i18n="proj.3s">Ao vivo · atualizado todo dia útil</span>
+          <h3 data-i18n="proj.3t">Relatórios e evidências <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p data-i18n="proj.3p">O resultado da última execução do CI: relatório da massa sem credenciais, relatório do Playwright e uma evidência por cenário, com print de cada tela e esperado × obtido.</p>
+          <ul class="chips" data-i18n="proj.3c"><li>Evidência</li><li>htmlextra</li><li>GitHub Pages</li></ul>
         </div>
       </a>
     </div>
@@ -183,9 +185,9 @@
   <!-- ─────────────── STACK ─────────────── -->
   <section id="competencias">
     <div class="revelar">
-      <p class="rotulo">Minhas tecnologias</p>
-      <h2>Stack e ferramentas</h2>
-      <p class="sub">As ferramentas com que mais trabalho no dia a dia de automação.</p>
+      <p class="rotulo" data-i18n="stack.rot">Minhas tecnologias</p>
+      <h2 data-i18n="stack.h2">Stack e ferramentas</h2>
+      <p class="sub" data-i18n="stack.sub">As ferramentas com que mais trabalho no dia a dia de automação.</p>
     </div>
     <div class="stack revelar">
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/playwright/playwright-original.svg" alt=""></div>Playwright</div>
@@ -196,7 +198,7 @@
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/appium.svg" alt=""></div>Appium</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/salesforce/salesforce-original.svg" alt=""></div>Salesforce</div>
     </div>
-    <p class="subtitulo revelar">Bancos de dados</p>
+    <p class="subtitulo revelar" data-i18n="stack.db">Bancos de dados</p>
     <div class="stack revelar">
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/oracle/oracle-original.svg" alt=""></div>Oracle</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt=""></div>SQL Server</div>
@@ -204,7 +206,7 @@
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt=""></div>MySQL</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt=""></div>MongoDB</div>
     </div>
-    <p class="subtitulo revelar">Linguagens e entrega</p>
+    <p class="subtitulo revelar" data-i18n="stack.ling">Linguagens e entrega</p>
     <div class="stack revelar">
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt=""></div>JavaScript</div>
       <div class="ferramenta"><div class="icone"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt=""></div>Java</div>
@@ -223,9 +225,9 @@
   <!-- ─────────────── CONTATO ─────────────── -->
   <section id="contato">
     <div class="revelar">
-      <p class="rotulo">Contato</p>
-      <h2>Vamos conversar?</h2>
-      <p class="sub">Se você tem uma oportunidade em QA Automation ou um projeto de automação de testes, fique à vontade para me chamar.</p>
+      <p class="rotulo" data-i18n="cont.rot">Contato</p>
+      <h2 data-i18n="cont.h2">Vamos conversar?</h2>
+      <p class="sub" data-i18n="cont.sub">Se você tem uma oportunidade em QA Automation ou um projeto de automação de testes, fique à vontade para me chamar.</p>
     </div>
     <div class="contatos revelar">
       <a class="contato-card" href="mailto:marcos.silva020594@gmail.com">
@@ -245,29 +247,16 @@
 
 </main>
 
-<footer class="wrap">© 2026 Marcos Silva · Feito à mão e testado, publicado no GitHub Pages.</footer>
+<footer class="wrap" data-i18n="rodape">© 2026 Marcos Silva · Feito à mão e testado, publicado no GitHub Pages.</footer>
 
-<nav class="tabbar" aria-label="Navegação">
-  <a href="#inicio"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg>Início</a>
-  <a href="#sobre"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Sobre</a>
-  <a href="#projetos"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>Projetos</a>
-  <a href="#contato"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contato</a>
+<nav class="tabbar" aria-label="Navegação" data-i18n-attr="aria-label:tab.aria">
+  <a href="#inicio"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg><span data-i18n="nav.inicio">Início</span></a>
+  <a href="#sobre"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span data-i18n="nav.sobre">Sobre</span></a>
+  <a href="#projetos"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span data-i18n="nav.proj">Projetos</span></a>
+  <a href="#contato"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-i18n="nav.contato">Contato</span></a>
 </nav>
 
-<script>
-  document.getElementById('tema').addEventListener('click', () => {
-    const r = document.documentElement;
-    r.dataset.theme = r.dataset.theme === 'light' ? 'dark' : 'light';
-    try { localStorage.setItem('tema', r.dataset.theme) } catch (e) {}
-  });
-  // Entrada dos blocos ao rolar a página.
-  const alvos = document.querySelectorAll('.revelar');
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((itens) => {
-      for (const it of itens) if (it.isIntersecting) { it.target.classList.add('visivel'); io.unobserve(it.target) }
-    }, { threshold: 0.12 });
-    alvos.forEach((el) => io.observe(el));
-  } else alvos.forEach((el) => el.classList.add('visivel'));
-</script>
+<script src="assets/en.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>
